@@ -99,7 +99,7 @@ Markdown     23 mins         ⣿⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
       <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/S.O.M.A?style=flat-square&labelColor=343b41""></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/Huang-Frederic/AuTempsDonne"><b>Ay Temps Donné</b></a></td>
+      <td><a href="https://github.com/Huang-Frederic/AuTempsDonne"><b>Au Temps Donné</b></a></td>
       <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/AuTempsDonne?style=flat-square&labelColor=343b41"/></td>
       <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/AuTempsDonne?style=flat-square&labelColor=343b41""></td>
     </tr>
