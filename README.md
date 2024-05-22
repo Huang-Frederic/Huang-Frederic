@@ -89,19 +89,19 @@ Markdown     23 mins         ⣿⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
     <tr border: none;>
       <td><b>📘 Project</b></td>
       <td><b>⭐ Stars</b></td>
-      <td><b>🗂 Files</b></td>
+      <td><b>📚 Languages</b></td>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><a href="https://github.com/Huang-Frederic/S.O.M.A"><b>S.O.M.A</b></a></td>
       <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/S.O.M.A?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Files Count" src="https://img.shields.io/github/directory-file-count/Huang-Frederic/S.O.M.A"></td>
+      <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/S.O.M.A"></td>
     </tr>
     <tr>
       <td><a href="https://github.com/Huang-Frederic/AuTempsDonne"><b>Ay Temps Donné</b></a></td>
       <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/AuTempsDonne?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Files Count" src="https://img.shields.io/github/directory-file-count/Huang-Frederic/AuTempsDonne"></td>
+      <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/AuTempsDonne"></td>
     </tr>
   </tbody>
 </table>
