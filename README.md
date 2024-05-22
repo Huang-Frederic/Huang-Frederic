@@ -8,6 +8,9 @@ I'm Huang Frédéric, student at ESGI, specializing in Artificial Intelligence a
 💬 Feel free to contact me with any opportunities or suggestions for improvement.<br>
 ⚡ My most used function : `console.log()`.<br />
 
+<!-- ![visitors](https://visitor-badge.laobi.icu/badge?page_id=Huang-Frederic.Huang-Frederic) -->
+
+## 🎯 Weekly development breakdown
 <!--START_SECTION:waka-->
 
 ```txt
@@ -79,8 +82,31 @@ Markdown     23 mins         ⣿⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)
 ![Blender](https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white)
 
+# 🤖 Featured Projects :
 
-# 📊 Stats:
+<table>
+  <thead align="center">
+    <tr border: none;>
+      <td><b>📘 Project</b></td>
+      <td><b>⭐ Stars</b></td>
+      <td><b>🗂 Files</b></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/Huang-Frederic/S.O.M.A"><b>S.O.M.A</b></a></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/S.O.M.A?style=flat-square&labelColor=343b41"/></td>
+      <td><img alt="Files Count" src="https://img.shields.io/github/directory-file-count/Huang-Frederic/S.O.M.A"></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/Huang-Frederic/AuTempsDonne"><b>Ay Temps Donné</b></a></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/AuTempsDonne?style=flat-square&labelColor=343b41"/></td>
+      <td><img alt="Files Count" src="https://img.shields.io/github/directory-file-count/Huang-Frederic/AuTempsDonne"></td>
+    </tr>
+  </tbody>
+</table>
+
+# 📊 Github Stats:
 
 ![](https://github-readme-stats.vercel.app/api?username=Huang-Frederic&theme=react&hide_border=false&include_all_commits=true&count_private=true) &nbsp;
 ![](https://github-readme-streak-stats.herokuapp.com/?user=Huang-Frederic&theme=react&hide_border=false)
