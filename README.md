@@ -2,7 +2,9 @@
 
 I'm Huang Frédéric, student at ESGI, specializing in Artificial Intelligence and Big Data. I live in the **Paris,France** region, nice to meet you !
 
-🔭 I’m currently working on [S.O.M.A (Shiba Observe Monitoring Assistant)](https://github.com/Huang-Frederic/S.O.M.A).<br>
+🦻 I'm currently working as a Full-Stack Developer as part of my internship, which is why my Weekly development breakdown increases even though I don't commit much on GitHub!
+
+🔭 I’m currently working on [A.L.Y.S (Aeonian Library for Yearning Seekers)](https://github.com/Huang-Frederic/A.L.Y.S).<br>
 🤝 I’m actively seeking an internship for September 2024 where I can apply my skills and grow as a developer.<br>
 🌱 I’m currently learning web scraping.<br>
 💬 Feel free to contact me with any opportunities or suggestions for improvement.<br>
@@ -102,6 +104,11 @@ Other          8 mins          ⣦⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
       <td><a href="https://github.com/Huang-Frederic/AuTempsDonne"><b>Au Temps Donné</b></a></td>
       <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/AuTempsDonne?style=flat-square&labelColor=343b41"/></td>
       <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/AuTempsDonne?style=flat-square&labelColor=343b41""></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/Huang-Frederic/A.L.Y.S"><b>A.L.Y.S</b></a></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/A.L.Y.S?style=flat-square&labelColor=343b41"/></td>
+      <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/A.L.Y.S?style=flat-square&labelColor=343b41""></td>
     </tr>
   </tbody>
 </table>
