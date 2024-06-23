@@ -45,7 +45,8 @@ Bash           1 min           ⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
 ![Scrapy](https://img.shields.io/badge/Scrapy-FF2D20?style=for-the-badge&logo=scrapy&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
 ![PyQt5](https://img.shields.io/badge/PyQt5-F89820?style=for-the-badge&logo=qt&logoColor=white)
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)<!-- -->
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+![Static Badge](https://img.shields.io/badge/sqlalchemy-gray?style=for-the-badge&logo=SQLAlchemy)<!-- -->
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
@@ -54,10 +55,12 @@ Bash           1 min           ⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
 ![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Static Badge](https://img.shields.io/badge/nuxt.js-gray?style=for-the-badge&logo=Nuxt.js)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)<!-- -->
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+
 
 ## Cloud and System:
 
@@ -68,10 +71,12 @@ Bash           1 min           ⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
 ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
-![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)<!-- -->
+![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
+![Static Badge](https://img.shields.io/badge/supabase-gray?style=for-the-badge&logo=Supabase)<!-- -->
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)<!-- -->
+
 
 ## Conception Design
 
@@ -101,14 +106,14 @@ Bash           1 min           ⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
       <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/S.O.M.A?style=flat-square&labelColor=343b41""></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/Huang-Frederic/AuTempsDonne"><b>Au Temps Donné</b></a></td>
-      <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/AuTempsDonne?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/AuTempsDonne?style=flat-square&labelColor=343b41""></td>
-    </tr>
-    <tr>
       <td><a href="https://github.com/Huang-Frederic/A.L.Y.S"><b>A.L.Y.S</b></a></td>
       <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/A.L.Y.S?style=flat-square&labelColor=343b41"/></td>
       <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/A.L.Y.S?style=flat-square&labelColor=343b41""></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/Huang-Frederic/AuTempsDonne"><b>Au Temps Donné</b></a></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/AuTempsDonne?style=flat-square&labelColor=343b41"/></td>
+      <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/AuTempsDonne?style=flat-square&labelColor=343b41""></td>
     </tr>
   </tbody>
 </table>
