@@ -5,7 +5,6 @@ I'm Huang Frédéric, student at ESGI, specializing in Artificial Intelligence a
 🦻 I'm currently working as a Full-Stack Developer as part of my internship, which is why my Weekly development breakdown increases even though I don't commit much on GitHub!
 
 🔭 I’m currently working on [A.L.Y.S (Aeonian Library for Yearning Seekers)](https://github.com/Huang-Frederic/A.L.Y.S).<br>
-🤝 I’m actively seeking an internship for September 2024 where I can apply my skills and grow as a developer.<br>
 🌱 I’m currently learning web scraping.<br>
 💬 Feel free to contact me with any opportunities or suggestions for improvement.<br>
 ⚡ My most used function : `console.log()`.<br />
