@@ -2,12 +2,11 @@
 
 I'm Huang Frédéric, student at ESGI, specializing in Artificial Intelligence and Big Data. I live in the **Paris,France** region, nice to meet you !
 
-🦻 I'm currently working as a Full-Stack Developer as part of my internship, which is why my Weekly development breakdown increases even though I don't commit much on GitHub!
+🦻 I'm currently working as a Full-Stack Developer as part of my internship. I am also hired as a AI Engineer at SLB starting in September 2024.
 
 🔭 I’m currently working on [A.L.Y.S (Aeonian Library for Yearning Seekers)](https://github.com/Huang-Frederic/A.L.Y.S).<br>
-🌱 I’m currently learning web scraping.<br>
+🌱 I’m currently learning Flutter.<br>
 💬 Feel free to contact me with any opportunities or suggestions for improvement.<br>
-⚡ My most used function : `console.log()`.<br />
 
 <!-- ![visitors](https://visitor-badge.laobi.icu/badge?page_id=Huang-Frederic.Huang-Frederic) -->
 
@@ -34,7 +33,9 @@ SQL          16 mins         ⣶⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
 ![Raspberry Pi](https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)<!-- -->
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)<!-- -->
+![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-003545?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-11557C?style=for-the-badge&logo=dart&logoColor=white)<!-- -->
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
