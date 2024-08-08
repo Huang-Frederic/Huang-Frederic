@@ -1,8 +1,6 @@
 # Hello ! Welcome to my Page 👋
 
-I'm Huang Frédéric, student at ESGI, specializing in Artificial Intelligence and Big Data. I live in the **Paris,France** region, nice to meet you !
-
-🦻 I'm currently working as a Full-Stack Developer as part of my internship. I am also hired as a AI Engineer at SLB starting in September 2024.
+I'm Huang Frédéric, Artificial Intelligence Engineer and Student at ESGI specialized in AI and Big Data. I live in the **Paris,France** region, nice to meet you !
 
 🔭 I’m currently working on [A.L.Y.S (Aeonian Library for Yearning Seekers)](https://github.com/Huang-Frederic/A.L.Y.S).<br>
 🌱 I’m currently learning Flutter.<br>
@@ -37,6 +35,7 @@ Git Config   2 mins          ⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 ![Flutter](https://img.shields.io/badge/Flutter-003545?style=for-the-badge&logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-11557C?style=for-the-badge&logo=dart&logoColor=white)<!-- -->
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Django](https://img.shields.io/badge/Django-003545?style=for-the-badge&logo=django&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=plotly&logoColor=white)
@@ -69,13 +68,17 @@ Git Config   2 mins          ⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 [![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)](https://www.apple.com/macos/)<!-- -->
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)<!-- -->
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Supabase](https://img.shields.io/badge/supabase-%233ECF8E.svg?style=for-the-badge&logo=supabase)
 ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
 ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/supabase-gray?style=for-the-badge&logo=Supabase)<!-- -->
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)<!-- -->
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Gitlab](https://img.shields.io/badge/gitlab-%232671E5.svg?style=for-the-badge&logo=gitlab&logoColor=white)
+![Auth0](https://img.shields.io/badge/auth0-%230A0A0A.svg?style=for-the-badge&logo=auth0)
+<!-- -->
 
 
 ## Conception Design
