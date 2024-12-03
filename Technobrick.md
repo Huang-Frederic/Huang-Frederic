@@ -1,7 +1,7 @@
 
 # 📍 Embedded AI Lab Dash Template
 
-This is a Template that you can clone to start your Dash project, it will contain all the components needed for a fast and easy release.
+The Embedded AI Lab Dash Template is a comprehensive framework designed to simplify the development of Dash-based web applications, integrating seamlessly with Python, Azure, and Dataiku environments. This template accelerates the application creation process by providing a pre-configured structure, essential components, and detailed guidance for deployment across diverse platforms. Its compatibility with Azure ensures smooth cloud-based hosting and scaling, making it an ideal solution for developers aiming to leverage the cloud for their applications. The template caters to developers seeking a streamlined approach to deploying interactive data visualizations and AI-driven dashboards, whether working locally, in enterprise ecosystems like Dataiku, or in cloud environments like Azure.
 
 
 ## 🔮 Stack
@@ -19,7 +19,7 @@ This is a Template that you can clone to start your Dash project, it will contai
 
 ### File Structure
 
-The key files and directories related are structured as follows:
+The core files and directories are organized as follows:
 
 ```txt
 AI_Lab_DC/
@@ -36,16 +36,16 @@ AI_Lab_DC/
 
 System Requirements:
 
-- Python 3.8+
+- Python 3.8 or higher
 - Package managers : pip
 
 ## 🛰️ Environnement Variables
 
-There is no .env file but in the main, you will have to define the assets_folder. 
+This template does not use a .env file. However, you must manually specify the assets_folder location in the main script.
 
 ### Default 
 
-By default you can setup the location of the assets folder, the rest is completly handled by Dash.
+By default, Dash manages most configurations automatically, and you can define the assets_folder as follows:
 
 ```python
 app = Dash(
@@ -57,18 +57,21 @@ app = Dash(
 
 ### Dataiku
 
-On Dataiku, it's a little tricky, the problem is that you cannot define the assets folder since you cannot access to folders of libraries, so in this library you have a global variable the library use to refractor all the paths that use assets. But beforehand, you will need to upload the assets folder in the resources of your Dataiku Webapp :
+In Dataiku, defining the assets_folder requires extra steps due to restricted library folder access. To work around this, you need to upload the assets folder to the Webapp resources and use a helper function to adjust paths.
 
-- From your project home, hover the "</>" section of the menu and click on Libraries (or type G+L).
-- On the top right you have a section called resources you should see a folder called lib/local-static, if not, create the folder.
+Steps:
+
+1 - Upload the assets folder:
+
+- Navigate to your project, open the </> menu, and click Libraries (shortcut: G+L).
+- In the Resources section (top right), locate or create a folder named lib/local-static.
 - Upload the entire assets folder of this repo in the local-static folder.
-- Go on your main.py, and rather that define the assets_folder during the creation of the app such as above, define it as following.
+
+2 - Configure the main script:
+Modify main.py to adjust the paths dynamically:
 
 ```python
-# Get the key to access public resources
 from dataiku import default_project_key
-
-# Import the sys module for the assets
 from AI_Lab_DC import initAssetsDir
 
 # Setup assets
@@ -78,7 +81,7 @@ app.config.external_stylesheets = [dbc.themes.BOOTSTRAP, f"{assets_dir}/style.cs
 ```
 
 > [!NOTE]  
-> To get the path to the resources, you need an key that you can retrieve using the function default_project_key.
+> The default_project_key() function retrieves the current project key, while initAssetsDir updates all paths in the library to use the specified assets_folder.
 > initAssetsDir is a function that refractor the path to the assets folder for the whole lib.
 
 ## 💻 Installation
@@ -86,7 +89,7 @@ app.config.external_stylesheets = [dbc.themes.BOOTSTRAP, f"{assets_dir}/style.cs
 ### From source
 
 > [!TIP]  
-> It's always better to create an env for your different project, and it should be the case in this one.
+> It's recommended to create a virtual environment for this project to keep dependencies isolated.
 
 ```bash
 $ pip install venv
@@ -101,7 +104,7 @@ $ pip install AI-Lab-DC --extra-index-url https://{Personnal_Access_Token}@pkgs.
 # The download should take some time.
 ```
 > [!WARNING]  
-> You need to create an access token in azure, with the right to read packages (Check Read in the Packaging section when create an access token).
+> Ensure you have an Azure personal access token with permissions to read packages. You can create one with "Read" rights under the Packaging section.
 
 Now you can use the library ! To get start, you can use the main.py available on this repo, it's a template you can use as default.
 
@@ -145,5 +148,6 @@ You can now start to develop ! you can use the main.py available on this repo, i
 
 ## 🔗 How to contribute ?
 
-- Local
-- Artifact already done
+You can extend the project by adding custom components in the components folder. Simply create a function that returns your desired component and include it in the __init__.py file. Similarly, new callbacks can be added to the callbacks folder, following the structure of existing examples. For assets like styles or images, place them in the appropriate subfolder within assets.
+
+Artifacts are managed by the pipeline, so any changes pushed to the main branch will automatically update the project. If you're making significant updates, remember to modify the version in the pyproject.toml file to reflect the changes.
