@@ -147,15 +147,3 @@ You can now start to develop ! you can use the main.py available on this repo, i
 
 - Local
 - Artifact already done
-
-## 🔗 Acknowledgements
-
-Red River West Recruitment :
-
-- [Technical Test Instructions](https://redriverwest.notion.site/Fullstack-Developer-Internship-Take-home-technical-test-059113beb6d549e49baffc50b7500bdd)
-- [Imposed Design](https://www.figma.com/design/ZpGmtyYlHS344OI8J6cD79/Untitled?node-id=0-1)
-
-Usefull Documentations :
-
-- [Nuxt.JS](https://nuxt.com/?uwu=true)
-- [Supabase](https://supabase.com/)
