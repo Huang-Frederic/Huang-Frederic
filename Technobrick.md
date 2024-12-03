@@ -54,118 +54,84 @@ app = Dash(
 
 On Dataiku, it's a little tricky, the problem is that you cannot define the assets folder since you cannot access to folders of libraries, so in this library you have a global variable the library use to refractor all the paths that use assets. But beforehand, you will need to upload the assets folder in the resources of your Dataiku Webapp :
 
-> From your project home, hover the "</>" section of the menu and click on Libraries (or type G+L).
-> On the top right you have a section called resources you should see a folder called lib/local-static, if not, create the folder.
-> Upload the entire assets folder of this repo in the local-static folder.
-> Go on your main.py, and rather that define the assets_folder during the creation of the app such as above, define it as following. 
+- From your project home, hover the "</>" section of the menu and click on Libraries (or type G+L).
+- On the top right you have a section called resources you should see a folder called lib/local-static, if not, create the folder.
+- Upload the entire assets folder of this repo in the local-static folder.
+- Go on your main.py, and rather that define the assets_folder during the creation of the app such as above, define it as following.
 
 ```python
 # Get the key to access public resources
 from dataiku import default_project_key
+
 # Import the sys module for the assets
 from AI_Lab_DC import initAssetsDir
+
 # Setup assets
 assets_dir = f"/local/projects/{default_project_key()}/public-resources/assets"
 initAssetsDir(assets_dir)
 app.config.external_stylesheets = [dbc.themes.BOOTSTRAP, f"{assets_dir}/style.css"]
 ```
 
-> [!WARNING]  
-> If your Supabase API calls fail or return empty results, it's probably because we have not implemented RLS, you can disable it by running the following query in the SQL Editor of your project on Supabase.
-
-
-These environnement variables are required for postgres integrations (you can find all these informations after creating a project in Supabase :
-
-```env
-DB_USER = "db_user"
-DB_PASSWORD = "db_password"
-DB_HOST = "db_host"
-DB_PORT = "db_port"
-DB_NAME = "postgres"
-```
+> [!NOTE]  
+> To get the path to the resources, you need an key that you can retrieve using the function default_project_key.
+> initAssetsDir is a function that refractor the path to the assets folder for the whole lib.
 
 ## 💻 Installation
 
 ### From source
 
-> Clone the repository
-
-```bash
-$ git clone https://github.com/Huang-Frederic/RRW-Internship
-$ cd RRW-Internship
-```
-
-> Install Python Dependencies
-
-```bash
-$ cd script
-$ python -m venv env
-$ env/bin/activate  # On Windows, use `env\Scripts\activate`
-$ pip install --no-deps -r requirements.txt
-```
-
-> Create a Supabase Project
-
-```sql
-# Create a new project in Supabase and create a table called "companies" with the following properties :
-
-create table companies (
-  id uuid primary key,
-  name text not null,
-  description text,
-  country text,
-  funding_amount numeric,
-  industries text[]
-);
-```
-
-> Set Up Environment Variables
-
-```bash
-# Create a .env file in the root directory of your project and add the following environment variables
-
-SUPABASE_URL = "https://your_url.supabase.co"
-SUPABASE_KEY = "your secret key"
-DB_USER = "db_user"
-DB_PASSWORD = "db_password"
-DB_HOST = "db_host"
-DB_PORT = "db_port"
-DB_NAME = "postgres"
-```
-
-> Run the script
-
-```bash
-$ python script.py
-
-# -> And now you should see the values in your database
-```
-
 > [!WARNING]  
-> If your Supabase API calls fail or return empty results, it's probably because we have not implemented RLS, you can disable it by running the following query in the SQL Editor of your project on Supabase.
-
-```sql
-ALTER TABLE companies DISABLE ROW LEVEL SECURITY;
-```
-
-> Install Nuxt.js Dependancies
+> It's always better to create an env for your different project, and it should be the case in this one.
 
 ```bash
-$ cd ../web-app
-$ npm install
+$ pip install venv
+# if not installed yet
+$ python -m venv env
+$ env\Scripts\activate 
 ```
-
-> Run the project
+Now you should be in the environnement, and everything you install in this state will be wall off within the project.
 
 ```bash
-$ npm run dev
-
-# http://localhost:3000
+$ pip install AI-Lab-DC --extra-index-url https://{Personnal_Access_Token}@pkgs.dev.azure.com/slb-swt/AI_Lab/_packaging/AI_Lab_Template/pypi/simple
+# The download should take some time.
 ```
+> [!TIP]  
+> You need to create an access token in azure, with the right to read packages (Check Read in the Packaging section when create an access token).
+
+Now you can use the library ! To get start, you can use the main.py available on this repo, it's a template you can use as default.
+
+```bash
+$ python main.py
+# to run your app
+```
+### From Dataiku
+
+On Dataiku, you will also need an Environnement, to do so, go to Administration > Code Envs (on the top right). You need to request a Python env if you don't have one. 
+Once you selected your env, go to General > Extra options section, and add an Extra options for "pip install", and add the extra-index-url as an option for "PIP INSTALL".
+
+```bash
+--extra-index-url=https://{Personnal_Access_Token}@pkgs.dev.azure.com/slb-swt/AI_Lab/_packaging/AI_Lab_Template/pypi/simple
+```
+
+After that, go to Packages to install and simply add the package, save and update. 
+
+```bash
+AI-Lab-DC
+```
+
+> [!TIP]  
+> After the update you can check if the package has been installed successfully in the currently installed packages, make sure to check on which version you start to develop. 
+
+## 🛠️ Components
 
 ## 🚶‍♂️ Author
 
 - [@Huang-Frederic](https://github.com/Huang-Frederic)
+
+## 🔗 How to contribute ?
+
+- Local
+- Artifact already done
 
 ## 🔗 Acknowledgements
 
