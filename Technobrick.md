@@ -3,12 +3,17 @@
 
 This is a Template that you can clone to start your Dash project, it will contain all the components needed for a fast and easy release.
 
+
 ## 🔮 Stack
 
 ![Static Badge](https://img.shields.io/badge/python-gray?style=for-the-badge&logo=Python)
 ![Static Badge](https://img.shields.io/badge/dash-gray?style=for-the-badge&logo=Dash)
 ![Static Badge](https://img.shields.io/badge/plotly-gray?style=for-the-badge&logo=Plotly)
 ![Static Badge](https://img.shields.io/badge/dataiku-gray?style=for-the-badge&logo=Dataiku)
+
+> [!NOTE]  
+> This project has been developed and documented on DSS13, dash 2.18.0 and AI_LAB_DC 0.1.13.
+
 
 ## 🌐 Project Overview
 
@@ -80,7 +85,7 @@ app.config.external_stylesheets = [dbc.themes.BOOTSTRAP, f"{assets_dir}/style.cs
 
 ### From source
 
-> [!WARNING]  
+> [!TIP]  
 > It's always better to create an env for your different project, and it should be the case in this one.
 
 ```bash
@@ -95,7 +100,7 @@ Now you should be in the environnement, and everything you install in this state
 $ pip install AI-Lab-DC --extra-index-url https://{Personnal_Access_Token}@pkgs.dev.azure.com/slb-swt/AI_Lab/_packaging/AI_Lab_Template/pypi/simple
 # The download should take some time.
 ```
-> [!TIP]  
+> [!WARNING]  
 > You need to create an access token in azure, with the right to read packages (Check Read in the Packaging section when create an access token).
 
 Now you can use the library ! To get start, you can use the main.py available on this repo, it's a template you can use as default.
@@ -120,7 +125,17 @@ AI-Lab-DC
 ```
 
 > [!TIP]  
-> After the update you can check if the package has been installed successfully in the currently installed packages, make sure to check on which version you start to develop. 
+> After the update you can check if the package has been installed successfully in the currently installed packages, make sure to check on which version you start to develop.
+
+The package is now installed on your environnement, now we have to create the webapp : 
+- From your project home, hover the "</>" section of the menu and go to webapps.
+- Click New Webapp > Code Webapp > Dash.
+- In the Settings of this app, make sure the right code env is selected.
+
+You can now start to develop ! you can use the main.py available on this repo, it's a template you can use as default.
+
+> [!WARNING]  
+> If you haven't defined the assets folder, please make sure to go above at "🛰️ Environnement Variables" section. Otherwise, the images and css won't be applied for the components. 
 
 ## 🛠️ Components
 
