@@ -232,6 +232,137 @@ $${\color{red}[!IMPORTANT]}$$ This component need a callback callable from the l
 
 </details>
 
+### **Button**
+
+<details>
+
+<summary>
+A customizable button component with various styles, colors, and transition effects
+    
+</summary>
+<br/>
+
+<ins>**__Parameters__**</ins> : 
+- `button_text` <sub>string</sub> : The text displayed on the button.
+- `button_style` <sub>string</sub> : The button's style. Options include:
+    - `filled` <sub>(default)</sub> : A solid button style.
+    - `bordered` : A button with a bordered style.
+    - `mini` : A smaller button variant.
+- `button_color` <sub>string</sub> : The button's color. Options include:
+    - `primary` <sub>(default)</sub> : SLB blue.
+    - `secondary` : Secondary blue.
+    - `positive` : Green.
+    - `negative` : Red.
+    - `deactivate` : Grey.
+- `button_transition` <sub>string</sub> : The transition effect when interacting with the button. Options include:
+    - `scale` <sub>(default)</sub> : Adds a scaling effect.
+    - `fade` : Adds a fading effect.
+- `disabled` <sub>boolean</sub> : Disables the button if set to True.
+
+<br/>
+
+```python
+import AI_Lab_DC.components as cp
+
+cp.Button(
+    button_text="Click Me",
+    button_style="filled",
+    button_color="primary",
+    button_transition="scale",
+    disabled=False,
+),
+```
+</details>
+
+### **Checkbox**
+
+<details>
+
+<summary>
+A styled checkbox component with customizable labels, alignment, and state control.
+    
+</summary>
+<br/>
+
+<ins>**__Parameters__**</ins> : 
+- `checkbox_label` <sub>string</sub> : The text label displayed next to the checkbox.
+- `checkbox_checked` <sub>int</sub> : Indicates whether the checkbox is checked initially. Use `1` for checked and `0` for unchecked <sub>(default)</sub>.
+- `reverse_label` <sub>boolean</sub> : Reverses the order of the label and the checkbox if set to `True`.
+- `disabled` <sub>boolean</sub> : Disables the checkbox if set to `True`.
+
+<br/>
+
+```python
+import AI_Lab_DC.components as cp
+
+cp.Checkbox(
+    checkbox_label="Accept Terms and Conditions",
+    checkbox_checked=1,
+    reverse_label=False,
+    disabled=False,
+),
+```
+</details>
+
+### **Divider**
+
+<details>
+
+<summary>
+A horizontal divider component, optionally displaying a label in the center. 
+    
+</summary>
+<br/>
+
+<ins>**__Parameters__**</ins> : 
+- `label` <sub>string</sub>: Optional text displayed at the center of the divider. If empty, the divider will be a simple line.
+
+<br/>
+
+```python
+import AI_Lab_DC.components as cp
+
+cp.Divider(
+    label="Section Title",
+),
+```
+</details>
+
+### **Dropzone**
+
+<details>
+
+<summary>
+A file upload component with drag-and-drop functionality, customizable labels, and file type restrictions.
+    
+</summary>
+<br/>
+
+<ins>**__Parameters__**</ins> : 
+- `id` <sub>string</sub>: Unique identifier for the DropZone component.
+- `label` <sub>string</sub>: Text displayed inside the drop area. Default is "Drag and drop files here".
+- `hint` <sub>string</sub>: Descriptive text displayed below the drop area. Default is a generic example message.
+- `file_types` <sub>list of strings</sub>: Restricts the accepted file types. Provide a list of MIME types (e.g., `["image/png", "image/jpeg"]`) or file extensions (e.g., `[".png", ".jpg"]`).
+
+<br/>
+
+```python
+import AI_Lab_DC.components as cp
+from AI_Lab_DC.callbacks.dropzone_callback import register_dropzone_callback
+
+cp.DropZone(
+    id="upload-zone",
+    label="Upload your files",
+    hint="Accepted formats: PNG, JPEG.",
+    file_types=[".png", ".jpg", ".jpeg"],
+),
+
+register_dropzone_callback(app, "upload-zone")
+```
+
+$${\color{red}[!IMPORTANT]}$$ This component need a callback callable from the lib and used to handle the component once a file is downloaded.
+
+</details>
 
 
 ## 🚶‍♂️ Author
