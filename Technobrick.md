@@ -44,7 +44,7 @@ System Requirements:
 
 This template does not use a `.env` file. However, you must manually specify the `assets/` folder location in the main script.
 
-### Default 
+ Default 
 
 By default, Dash manages most configurations automatically, and you can define the assets_folder as follows:
 
@@ -56,7 +56,7 @@ app = Dash(
 )
 ```
 
-### Dataiku
+ Dataiku
 
 In Dataiku, defining the `assets/` folder requires extra steps due to restricted library folder access. To work around this, you need to upload the assets folder to the Webapp resources and use a helper function to adjust paths.
 
@@ -87,7 +87,7 @@ app.config.external_stylesheets = [dbc.themes.BOOTSTRAP, f"{assets_dir}/style.cs
 
 ## 💻 Installation
 
-### From source
+ From source
 
 > [!TIP]  
 > It's recommended to create a virtual environment for this project to keep dependencies isolated.
@@ -113,7 +113,7 @@ Now you can use the library ! To get start, you can use the `main.py` available 
 $ python main.py
 # to run your app
 ```
-### From Dataiku
+ From Dataiku
 
 On Dataiku, you will also need an Environnement, to do so, go to Administration > Code Envs (on the top right). You need to request a Python env if you don't have one. 
 Once you selected your env, go to General > Extra options section, and add an Extra options for "pip install", and add the `extra-index-url`.
@@ -158,6 +158,13 @@ Most used component, this component is a menu styled following the way of SLB.
 - `tooltip_users` <sub>array of strings</sub> : List of users that have contribued in any way to the project, when this project is not None, a tooltip icon appear beside the title showing the contributors when hovered.
 - `show_toggler` <sub>boolean</sub> : Atiavte a burger button on the right side of the menu, this button is required to integrate the sidemenu component.
 - `is_sticky` <sub>boolean</sub> : Make the menu stick to the top when scrolling or not.
+- Other attributes are passed directly to the `dbc.Navbar` component.
+
+<ins>**__Structure__**</ins>:
+
+- `Left Section`: Displays the logos "SLB" and "Embedded AI Lab".
+- `Center Section`: Displays the title of the app and the contributors in a tooltip (optional).
+- `Right Section`: Displays a clickable burger menu .
 
 <br/>
 
@@ -182,13 +189,14 @@ cp.Navbar(
 <details>
 
 <summary>
-A customizable off-canvas sidebar, designed for adding supplementary menu content or links. 
+The Sidebar component is a collapsible container, typically used for navigation or additional controls. It can display a combination of interactive or static content, such as links, buttons, or other UI elements, arranged vertically. The component supports dynamic updates and integrations with Dash callbacks, making it versatile for both simple and complex Dash applications.
     
 </summary>
 <br/>
 
 <ins>**__Parameters__**</ins> : 
 - `html_content` <sub>HTML or Dash component</sub> : Custom HTML or Dash components to display inside the sidebar.
+- Other attributes are passed directly to the `dbc.Offcanvas` component.
 
 <br/>
 
@@ -230,6 +238,9 @@ register_sidebar_callback(app) # Connect the Sidebar to the Navbar
 
 $${\color{red}[!IMPORTANT]}$$ This component need a callback callable from the lib and used to link the burger button in the Navbar to the Sidebar.
 
+<ins>**__Callback__**</ins> : 
+- `app` : Put the app in argument to keep the callback on the loop. 
+
 </details>
 
 ### **Button**
@@ -237,7 +248,9 @@ $${\color{red}[!IMPORTANT]}$$ This component need a callback callable from the l
 <details>
 
 <summary>
-A customizable button component with various styles, colors, and transition effects
+The Button component provides a customizable and interactive button element for triggering actions or navigating within a Dash application. It supports multiple styles, such as filled, bordered, and mini, with a choice of colors (e.g., primary, secondary, etc.) to match your design needs. The button also includes optional animated transitions, like scaling or fading effects, to enhance user engagement. It is suitable for use in forms, dashboards, and general interactivity.
+
+
     
 </summary>
 <br/>
@@ -258,6 +271,7 @@ A customizable button component with various styles, colors, and transition effe
     - `scale` <sub>(default)</sub> : Adds a scaling effect.
     - `fade` : Adds a fading effect.
 - `disabled` <sub>boolean</sub> : Disables the button if set to True.
+- Other attributes are passed directly to the `html.Button` component.
 
 <br/>
 
@@ -279,7 +293,8 @@ cp.Button(
 <details>
 
 <summary>
-A styled checkbox component with customizable labels, alignment, and state control.
+The Checkbox component is a versatile and visually appealing way to capture binary input (checked/unchecked) from users. It can be used for single or multiple selections in forms, settings, or any interactive interface. The component supports a reversed label layout and integrates seamlessly with Dash callbacks for state management. Additional styling options allow for consistent theming, and it includes support for a disabled state when input is restricted.
+
     
 </summary>
 <br/>
@@ -289,6 +304,7 @@ A styled checkbox component with customizable labels, alignment, and state contr
 - `checkbox_checked` <sub>int</sub> : Indicates whether the checkbox is checked initially. Use `1` for checked and `0` for unchecked <sub>(default)</sub>.
 - `reverse_label` <sub>boolean</sub> : Reverses the order of the label and the checkbox if set to `True`.
 - `disabled` <sub>boolean</sub> : Disables the checkbox if set to `True`.
+- Other attributes are passed directly to the `dbc.Checklist` component.
 
 <br/>
 
@@ -309,13 +325,14 @@ cp.Checkbox(
 <details>
 
 <summary>
-A horizontal divider component, optionally displaying a label in the center. 
+The Divider component is a horizontal separator, used to structure content within an application. It include an optional central label, allowing developers to group related content meaningfully. The simple yet flexible design ensures that the divider integrates naturally into various layouts, helping to visually organize and enhance readability within complex dashboards.    
     
 </summary>
 <br/>
 
 <ins>**__Parameters__**</ins> : 
-- `label` <sub>string</sub>: Optional text displayed at the center of the divider. If empty, the divider will be a simple line.
+- `label` <sub>string</sub> : Optional text displayed at the center of the divider. If empty, the divider will be a simple line.
+- Other attributes are passed directly to the `html.Div` component.
 
 <br/>
 
@@ -328,21 +345,63 @@ cp.Divider(
 ```
 </details>
 
-### **Dropzone**
+### **Dropdown**
 
 <details>
 
 <summary>
-A file upload component with drag-and-drop functionality, customizable labels, and file type restrictions.
+The Dropdown component provides an interactive, user-friendly dropdown menu for selecting options from a list. It supports labels, placeholder text, and an optional hint for improved accessibility. The component is fully customizable, allowing for disabled states, dynamic updates, and integration with Dash callbacks. 
     
 </summary>
 <br/>
 
 <ins>**__Parameters__**</ins> : 
-- `id` <sub>string</sub>: Unique identifier for the DropZone component.
-- `label` <sub>string</sub>: Text displayed inside the drop area. Default is "Drag and drop files here".
-- `hint` <sub>string</sub>: Descriptive text displayed below the drop area. Default is a generic example message.
-- `file_types` <sub>list of strings</sub>: Restricts the accepted file types. Provide a list of MIME types (e.g., `["image/png", "image/jpeg"]`) or file extensions (e.g., `[".png", ".jpg"]`).
+- `options` <sub>list of dictionaries</sub> : Specifies the dropdown options. Each dictionary includes:
+    - `label` <sub>string</sub> : The display text for the option.
+    - `value` <sub>any</sub> : The value assigned to the option.
+- `label` <sub>string</sub> : A descriptive label displayed above the dropdown.
+- `hint` <sub>string</sub> : Additional information displayed below the dropdown.
+- `disabled` <sub>boolean</sub> : Disables the dropdown if set to `True`.
+- `placeholder` <sub>string</sub> : Placeholder text displayed when no option is selected.
+- Other attributes are passed directly to the `dcc.Dropdown` component.
+
+<br/>
+
+```python
+import AI_Lab_DC.components as cp
+
+cp.Dropdown(
+    options=[
+        {"label": "Option 1", "value": "option1"},
+        {"label": "Option 2", "value": "option2"},
+        {"label": "Option 3", "value": "option3"},
+    ],
+    label="Select an option",
+    hint="Choose an option from the dropdown menu.",
+    placeholder="Select...",
+    disabled=False,
+    className="custom-dropdown-class",
+)
+```
+
+</details>
+
+### **Dropzone**
+
+<details>
+
+<summary>
+The DropZone component enables intuitive file uploads through drag-and-drop functionality. Users can drag files onto the designated area, or optionally click to open a file selection dialog. With support for customizable labels, hints, and file type restrictions, the DropZone offers flexibility for a variety of use cases, such as uploading images, documents, or data files. It integrates seamlessly with Dash callbacks, enabling developers to process uploaded files dynamically.    
+    
+</summary>
+<br/>
+
+<ins>**__Parameters__**</ins> : 
+- `id` <sub>string</sub> : Unique identifier for the DropZone component.
+- `label` <sub>string</sub> : Text displayed inside the drop area. Default is "Drag and drop files here".
+- `hint` <sub>string</sub> : Descriptive text displayed below the drop area. Default is a generic example message.
+- `file_types` <sub>list of strings</sub> : Restricts the accepted file types. Provide a list of MIME types (e.g., `["image/png", "image/jpeg"]`) or file extensions (e.g., `[".png", ".jpg"]`).
+- Other attributes are passed directly to the `dcc.Upload` component.
 
 <br/>
 
@@ -362,8 +421,252 @@ register_dropzone_callback(app, "upload-zone")
 
 $${\color{red}[!IMPORTANT]}$$ This component need a callback callable from the lib and used to handle the component once a file is downloaded.
 
+<ins>**__Callback__**</ins> : 
+- `app` : Put the app in argument to keep the callback on the loop. 
+- `dropzone_id` : Define the dropzone component of this action.
+
 </details>
 
+### **Footer**
+
+<details>
+
+<summary>
+The Footer component is a responsive, multi-section footer designed for branding and navigation. It typically includes three sections: branding or credits, a central message, and an optional link to external resources like SharePoint or documentation. The component ensures consistency across pages and supports dynamic updates for real-time customization. Its structured layout enhances the professional appearance of your application.    
+    
+</summary>
+<br/>
+
+<ins>**__Parameters__**</ins> : 
+- `sharepoint_link` <sub>string</sub> : URL for the SharePoint link displayed in the footer.
+- Other attributes are passed directly to the `dbc.Container` component.
+
+<br/>
+
+<ins>**__Structure__**</ins>:
+
+- `Left Section` : Displays the text "Powered by -" followed by the AI Lab logo and "Embedded AI Lab SRPC".
+- `Center Section` : Displays the classification "SLB-Private".
+- `Right Section` : Displays a clickable link to SharePoint, with accompanying SharePoint logo.
+
+<br/>
+
+```python
+import AI_Lab_DC.components as cp
+
+cp.Footer(
+    sharepoint_link="https://sharepoint.example.com",
+),
+```
+
+</details>
+
+### **Input**
+
+<details>
+
+<summary>
+The Input component is a flexible, multi-purpose input field for capturing user data. It supports different types (text, textarea, and numeric), with options for prefixes, suffixes, and additional control buttons (e.g., increment/decrement for numeric inputs). Customizable labels and hints enhance usability, while seamless integration with Dash callbacks ensures dynamic interaction and real-time feedback. It is ideal for forms, data entry, and interactive dashboards.
+    
+</summary>
+<br/>
+
+<ins>**__Parameters__**</ins> : 
+- `type` <sub>string</sub> : Specifies the input type. Options include:
+    - `"text"` <sub>(default)</sub> : A standard text input.
+    - `"textarea"` : A multi-line text input.
+    - `"numeric"` : A number input with increment and decrement buttons.
+- `placeholder` <sub>string</sub> : Placeholder text displayed inside the input field.
+- `prefix` <sub>string</sub> : Optional text displayed before the input field for text type inputs.
+- `suffix` <sub>string</sub> : Optional text displayed after the input field for text type inputs.
+- `label` <sub>string</sub> : A descriptive label displayed above the input field.
+- `hint` <sub>string</sub> : Additional information displayed below the input field.
+- `disabled` <sub>boolean</sub> : Disables the input if set to True.
+- Other attributes are passed directly to the `dbc.Input` component.
+
+<br/>
+
+```python
+import AI_Lab_DC.components as cp
+
+# Example for text input
+cp.Input(
+    type="text",
+    placeholder="Enter your name",
+    prefix="Name",
+    label="User Name",
+    hint="Please enter your full name.",
+    disabled=False,
+),
+
+# Example for numeric input
+cp.Input(
+    type="numeric",
+    placeholder="Enter a number",
+    label="Age",
+    hint="Use the buttons to adjust the value.",
+    disabled=False,
+    id="numeric-input-example",
+),
+```
+
+</details>
+
+### **Radio**
+
+<details>
+
+<summary>
+The Radio component presents a group of radio buttons for single-option selection. It supports dynamic styling, labels, and tooltips for enhanced user guidance. Each option can display supplementary information using interactive tooltips, making it ideal for complex configurations. The component integrates with Dash callbacks, ensuring that user selections can dynamically update the application state.
+    
+</summary>
+<br/>
+
+<ins>**__Parameters__**</ins> : 
+- `options` <sub>list of dictionaries</sub> : Specifies the radio button choices. Each dictionary can include :
+    - `label` <sub>string</sub> : The display text for the option.
+    - `value` <sub>any</sub> : The value assigned to the option.
+    - `tooltip` <sub>string</sub> : (Optional) Tooltip text shown when hovering over the info icon.
+- `label` <sub>string</sub> : A descriptive label displayed above the radio items group.
+- `hint` <sub>string</sub> : Additional information displayed below the radio items group.
+- Other attributes are passed directly to the `dcc.RadioItems` component.
+
+<br/>
+
+```python
+import AI_Lab_DC.components as cp
+
+cp.RadioItems(
+    options=[
+        {"label": "Option 1", "value": "option1", "tooltip": "This is Option 1."},
+        {"label": "Option 2", "value": "option2", "tooltip": "This is Option 2."},
+        {"label": "Option 3", "value": "option3"},  # No tooltip
+    ],
+    label="Choose an option",
+    hint="Hover over the info icons to learn more.",
+    value="option1",  # Default selected option
+    className="custom-radio-group",
+),
+```
+</details>
+
+### **Slider**
+
+<details>
+
+<summary>
+The Slider component provides an interactive control for selecting a value or range within a defined range. It supports customizable templates, vertical or horizontal orientation, and optional marks for clear value indication. Designed for scenarios like filtering data, adjusting parameters, or fine-tuning settings, the component integrates seamlessly with Dash callbacks for responsive and dynamic behavior.
+    
+</summary>
+<br/>
+
+<ins>**__Parameters__**</ins> : 
+- `max_value` <sub>number</sub> : Maximum value of the slider.
+- `min_value` <sub>number</sub> : Minimum value of the slider (default is `0`).
+- `start_value` <sub>number</sub> : Initial value of the slider (defaults to `min_value`).
+- `step_value` <sub>number</sub> : Increment step for the slider (default is `1`).
+- `template` <sub>string</sub> : Formatting string for the tooltip (e.g., `"{value}%"`).
+- `is_vertical` <sub>boolean</sub> : Determines the slider's orientation (default is horizontal).
+- Other attributes are passed directly to the `dcc.Slider` component.
+
+<br/>
+
+```python
+import AI_Lab_DC.components as cp
+
+cp.Slider(
+    max_value=100,
+    min_value=0,
+    start_value=50,
+    step_value=5,
+    template="{value}%",
+    is_vertical=False,
+    id="example-slider",
+),
+```
+
+</details>
+
+### **Switch**
+
+<details>
+
+<summary>
+The Switch component is a  toggle control for binary input. It supports labeled options, reversed layouts, and a disabled state for restricted input. Its compact design makes it suitable for settings, filters, and on/off controls in dashboards or forms. The component integrates with Dash callbacks for real-time interaction.
+    
+</summary>
+<br/>
+
+<ins>**__Parameters__**</ins> : 
+- `switch_label` <sub>string</sub> : Label text displayed alongside the switch.
+- `switch_checked` <sub>integer</sub> : Sets the initial state of the switch (default is `0` for unchecked).
+- `reverse_label` <sub>boolean</sub> : If `True`, places the label to the right of the switch (default is `False`).
+- `disabled` <sub>boolean</sub> : Disables the switch when set to `True` (default is `False`).
+- Other attributes are passed directly to the `dbc.Checklist` component.
+
+<br/>
+
+```python
+import AI_Lab_DC.components as cp
+
+cp.Switch(
+    switch_label="Enable Notifications",
+    switch_checked=1,
+    reverse_label=False,
+    disabled=False,
+    id="example-switch",
+),
+```
+
+</details>
+
+### **TabControl**
+
+<details>
+
+<summary>
+The TabControl component is a collapsible UI element that toggles between showing and hiding its content when clicked. It provides an interactive way to organize and display content sections dynamically.
+    
+</summary>
+<br/>
+
+<ins>**__Parameters__**</ins> : 
+- `tab_id` <sub>string</sub> : Unique identifier for the tab. Used for button and content container IDs.
+- `label` <sub>string</sub> : Text displayed on the tab's toggle button.
+- `content` <sub>component, optional</sub> : The content to display inside the tab when expanded. Defaults to `html.Div("This is the default content.")`.
+- `is_open` <sub>boolean, optional</sub> : Initial state of the tab. If `True`, the tab starts expanded; otherwise, it's collapsed. Defaults to `False`.
+
+<ins>**__Structure__**</ins> : 
+- `Toggle Button` : A button with an arrow icon (`▶` for closed and `▼` for open) followed by the `label`. Clicking toggles the visibility of the `content`.
+- `Content Area` : Contains the content passed to the `content` parameter. Hidden or shown based on the state of the toggle button.
+
+<br/>
+
+```python
+import AI_Lab_DC.components as cp
+from AI_Lab_DC.callbacks.tabcontrol_callback import register_tabcontrol_callback
+
+example_content = html.Div(
+    "This is example content for the tab.", style={"padding": "10px"}
+)
+
+cp.TabControl(
+    tab_id="tabcontrol_id",
+    content=example_content,
+    is_open=True,
+),
+
+register_tabcontrol_callback(app, "tabcontrol_id", label="Example Tab")
+```
+
+$${\color{red}[!IMPORTANT]}$$ This component need a callback callable from the lib and used to handle the component once a file is downloaded.
+
+<ins>**__Callback__**</ins> : 
+- `app` : Put the app in argument to keep the callback on the loop. 
+- `tab_id` : Define the tabcontrol component of this action.
+- `label` : We need to specify the label to keep it rendered with the right arrow.
+
+</details>
 
 ## 🚶‍♂️ Author
 
