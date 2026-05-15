@@ -2,8 +2,8 @@
 
 I'm Huang Frédéric, Artificial Intelligence Engineer and Student at ESGI specialized in AI and Big Data. I live in the **Paris,France** region, nice to meet you !
 
-🔭 I’m currently working on [A.L.Y.S (Aeonian Library for Yearning Seekers)](https://github.com/Huang-Frederic/A.L.Y.S).<br>
-🌱 I’m currently learning Flutter.<br>
+🔭 I’m currently working on [A.N.N.A (A Nomad's Notes & Archives)](https://github.com/Huang-Frederic/A.N.N.A) — design & brainstorming phase — and shipping regular updates to [I.R.I.S (Intelligent Recognition Inventory System)](https://github.com/Huang-Frederic/I.R.I.S).<br>
+🌱 I’m currently learning the **Blackboard pattern** applied to LLM architectures.<br>
 💬 Feel free to contact me with any opportunities or suggestions for improvement.<br>
 
 <!-- ![visitors](https://visitor-badge.laobi.icu/badge?page_id=Huang-Frederic.Huang-Frederic) -->
@@ -25,11 +25,13 @@ Other      3 mins                ⣦⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
 
 
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
 ![AssemblyScript](https://img.shields.io/badge/assembly%20script-%23000000.svg?style=for-the-badge&logo=assemblyscript&logoColor=white)
 ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
 ![Raspberry Pi](https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)<!-- -->
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+![Scala](https://img.shields.io/badge/scala-%23DC322F.svg?style=for-the-badge&logo=scala&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-003545?style=for-the-badge&logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-11557C?style=for-the-badge&logo=dart&logoColor=white)<!-- -->
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -56,7 +58,9 @@ Other      3 mins                ⣦⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)<!-- -->
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
-![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)<!-- -->
+![Apache Hadoop](https://img.shields.io/badge/Apache%20Hadoop-66CCFF?style=for-the-badge&logo=apachehadoop&logoColor=black)
+![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
 
 
 ## Cloud and System:
@@ -66,6 +70,9 @@ Other      3 mins                ⣦⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
 [![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)](https://www.apple.com/macos/)<!-- -->
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)<!-- -->
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Microsoft Azure](https://img.shields.io/badge/Azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![Azure DevOps](https://img.shields.io/badge/Azure%20DevOps-%230072C6.svg?style=for-the-badge&logo=azuredevops&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
 ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
@@ -101,19 +108,24 @@ Other      3 mins                ⣦⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://github.com/Huang-Frederic/S.O.M.A"><b>S.O.M.A</b></a></td>
-      <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/S.O.M.A?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/S.O.M.A?style=flat-square&labelColor=343b41""></td>
+      <td><a href="https://github.com/Huang-Frederic/I.R.I.S"><b>I.R.I.S</b></a></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/I.R.I.S?style=flat-square&labelColor=343b41"/></td>
+      <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/I.R.I.S?style=flat-square&labelColor=343b41"></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/Huang-Frederic/A.N.N.A"><b>A.N.N.A</b></a></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/A.N.N.A?style=flat-square&labelColor=343b41"/></td>
+      <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/A.N.N.A?style=flat-square&labelColor=343b41"></td>
     </tr>
     <tr>
       <td><a href="https://github.com/Huang-Frederic/A.L.Y.S"><b>A.L.Y.S</b></a></td>
       <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/A.L.Y.S?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/A.L.Y.S?style=flat-square&labelColor=343b41""></td>
+      <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/A.L.Y.S?style=flat-square&labelColor=343b41"></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/Huang-Frederic/AuTempsDonne"><b>Au Temps Donné</b></a></td>
-      <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/AuTempsDonne?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/AuTempsDonne?style=flat-square&labelColor=343b41""></td>
+      <td><a href="https://github.com/Huang-Frederic/S.O.M.A"><b>S.O.M.A</b></a></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/Huang-Frederic/S.O.M.A?style=flat-square&labelColor=343b41"/></td>
+      <td><img alt="Files Count" src="https://img.shields.io/github/languages/count/Huang-Frederic/S.O.M.A?style=flat-square&labelColor=343b41"></td>
     </tr>
   </tbody>
 </table>
